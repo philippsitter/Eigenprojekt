@@ -6,8 +6,8 @@ import SortierDialog from "./components/SortierDialog";
 
 /**
  * @version 1.0
- * @author Alfred Walther <alfred.walther@syntax-institut.de>
- * @description Diese App ist eine Einkaufsliste mit React.js und separatem Model, welche Offline verwendet werden kann
+ * @author Philipp Sitter <philippsitter328@gmail.com>
+ * @description Diese App ist ein ein Warenkorb als Teil einer BestellApp mit React.js und separatem Model, welche Offline verwendet werden kann
  * @license Gnu Public Lesser License 3.0
  *
  */
@@ -137,12 +137,12 @@ class App extends React.Component {
     return (
       <div id="container">
         <header>
-          <h1>Watchlist</h1>
+          <h1>Warenkorb</h1>
           <label
             className="mdc-text-field mdc-text-field--filled mdc-text-field--with-trailing-icon mdc-text-field--no-label">
             <span className="mdc-text-field__ripple"></span>
             <input className="mdc-text-field__input" type="search"
-                   id="artikelEingabe" placeholder="Artikel hinzufügen"
+                   id="artikelEingabe" placeholder="Produkt hinzufügen"
                    onKeyPress={e => (e.key == 'Enter') ? this.artikelHinzufuegen() : ''}/>
             <span className="mdc-line-ripple"></span>
             <i className="material-icons mdc-text-field__icon mdc-text-field__icon--trailing"
