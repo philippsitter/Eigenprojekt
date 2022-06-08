@@ -41,7 +41,7 @@ class App extends React.Component {
 
   einkaufenAufZuKlappen() {
     const neuerZustand = !this.state.einkaufenAufgeklappt
-    localStorage.setItem("einkaufenAufgeklappt", neuerZustand)
+    localStorage.setItem("einkaufenAufgeklappt", neuerZustand);
     this.setState({einkaufenAufgeklappt: neuerZustand})
   }
 

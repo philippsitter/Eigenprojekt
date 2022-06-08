@@ -1,35 +1,43 @@
 #root {
-    width: 23rem;
-    background-image: url("../img/markt.jpg");
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-attachment: fixed;
+    width: 21rem;
+    background-image: url("../img/Candy.jpeg");
+    background-repeat: repeat;
+    background-position: center ;
+    background-attachment: inherit;
+    //*
+    background-size: 16rem;
+    *//
+
 }
 #container {
-    opacity: 85%;
+    opacity: 75%;
 }
 :root {
-    --mdc-theme-primary: #33691E;
+    --mdc-theme-primary: #901a8f;
     --mdc-theme-secondary: #827717;
 }
 dt {
-    background-color: #7CB342;
+    background-color: #901a8f;
     color: var(--mdc-theme-on-primary);
 }
 h2, dd {
     background-color: var(--mdc-theme-on-primary);
 }
 
-.aktiv { background-color: #4b81d6 }
-.inaktiv { background-color: #7CB342 }
+.aktiv { background-color: #901a8f
+}
+.inaktiv { background-color: #ffffff
+}
 h1, h2, dl {
     margin: 0;
 }
 h1 {
     text-align: center;
+    color: black;
 }
 h2 {
     padding: 0 0 10px 0;
+    text-align: center;
 }
 i.material-icons {
     cursor: pointer;
@@ -47,6 +55,8 @@ dt {
     display: flex;
     font-weight: 500;
     padding: 3px 5px;
+    text-align: center;
+    color: #000000;
 }
 dt span {
     width: 100%;
