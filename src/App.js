@@ -7,7 +7,7 @@ import SortierDialog from "./components/SortierDialog";
 /**
  * @version 1.0
  * @author Philipp Sitter <philippsitter328@gmail.com>
- * @description Diese App ist ein ein Warenkorb als Teil einer BestellApp mit React.js und separatem Model, welche Offline verwendet werden kann
+ * @description Diese App ist ein Warenkorb als Teil einer BestellApp mit React.js und separatem Model, welche Offline verwendet werden kann
  * @license Gnu Public Lesser License 3.0
  *
  */
@@ -52,9 +52,10 @@ class App extends React.Component {
   }
 
   lsLoeschen() {
-    if (confirm("Wollen Sie wirklich alles löschen?!")) {
-      localStorage.clear()
-    }
+     if (window.confirm("Wollen Sie wirklich alles löschen?!")) {
+       localStorage.clear()
+       window.location.reload()
+      }
   }
 
   /**
@@ -155,7 +156,7 @@ class App extends React.Component {
 
         <main>
           <section>
-            <h2>Noch zu kaufen
+            <h2>Hinzugefügte Produkte
               <i onClick={() => this.einkaufenAufZuKlappen()} className="material-icons">
                 {this.state.einkaufenAufgeklappt ? 'expand_more' : 'expand_less'}
               </i>
@@ -166,7 +167,7 @@ class App extends React.Component {
           </section>
           <hr/>
           <section>
-            <h2>Schon gekauft
+            <h2>Entfernte Produkte
               <i onClick={() => this.erledigtAufZuKlappen()} className="material-icons">
                 {this.state.erledigtAufgeklappt ? 'expand_more' : 'expand_less'}
               </i>
