@@ -26,9 +26,4 @@ class Artikel {
   }
 }
 
-/**
- *erstellt eine Instanz der Klasse Artikel
- */
-//let apfel = new Artikel("Apfel", 0)
-
 export default Artikel
