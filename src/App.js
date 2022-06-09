@@ -139,6 +139,7 @@ class App extends React.Component {
       <div id="container">
         <header>
           <h1>Warenkorb</h1>
+          <center>
           <label
             className="mdc-text-field mdc-text-field--filled mdc-text-field--with-trailing-icon mdc-text-field--no-label">
             <span className="mdc-text-field__ripple"></span>
@@ -150,6 +151,7 @@ class App extends React.Component {
                tabIndex="0" role="button"
                onClick={() => this.artikelHinzufuegen()}>add_circle</i>
           </label>
+          </center>
 
         </header>
         <hr/>

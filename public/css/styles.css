@@ -4,9 +4,6 @@
     background-repeat: repeat;
     background-position: center ;
     background-attachment: inherit;
-    //*
-    background-size: 16rem;
-    *//
 
 }
 #container {
@@ -20,8 +17,11 @@ dt {
     background-color: #901a8f;
     color: var(--mdc-theme-on-primary);
 }
-h2, dd {
+h1, h2, dd {
     background-color: var(--mdc-theme-on-primary);
+}
+h1 {
+    background-color: #901a8f;
 }
 
 .aktiv { background-color: #901a8f
@@ -34,10 +34,12 @@ h1, h2, dl {
 h1 {
     text-align: center;
     color: black;
+    font-size: 3rem;
 }
 h2 {
     padding: 0 0 10px 0;
     text-align: center;
+    color: black;
 }
 i.material-icons {
     cursor: pointer;
@@ -56,7 +58,7 @@ dt {
     font-weight: 500;
     padding: 3px 5px;
     text-align: center;
-    color: #000000;
+    color: black;
 }
 dt span {
     width: 100%;
@@ -74,6 +76,7 @@ dd label {
     padding: 3px 0;
     overflow: hidden;
     text-overflow: ellipsis;
+
 }
 dd label input[type="checkbox"] {
     margin: 6px 6px;
