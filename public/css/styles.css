@@ -17,12 +17,12 @@ dt {
     background-color: #901a8f;
     color: var(--mdc-theme-on-primary);
 }
-h1, h2, dd {
+h2, dd {
     background-color: var(--mdc-theme-on-primary);
 }
-h1 {
-    background-color: #901a8f;
-}
+/*h1 {*/
+/*    background-color: #901a8f;*/
+/*}*/
 
 .aktiv { background-color: #901a8f
 }
@@ -35,6 +35,7 @@ h1 {
     text-align: center;
     color: black;
     font-size: 3rem;
+    -webkit-text-stroke: 2px black;
 }
 h2 {
     padding: 0 0 10px 0;
